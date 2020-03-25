@@ -31,8 +31,14 @@
         <div>
             <a href="{% url 'formulario_anyadir' %}">Añadir</a>
         </div>
+        <div>
+            <a href="{% url 'borrar_todo' %}">CUIDADO!!! BORRAR TODO!!</a>
+        </div>
     </div>
 
+    {% if personas %}
+        <p>Hola buenas tardes</p>
+    {% endif %}
 </body>
 
 </html>

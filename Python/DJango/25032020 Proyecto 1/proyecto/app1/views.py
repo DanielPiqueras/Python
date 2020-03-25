@@ -56,3 +56,9 @@ def borrar(request, persona_id):
     Persona.objects.filter(id=persona_id).delete()
 
     return redirect('mostrar')
+
+def borrar_todo(request):
+
+    Persona.objects.all().delete()
+
+    return redirect('index')
