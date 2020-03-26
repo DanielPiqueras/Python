@@ -8,10 +8,12 @@ from .forms import AnyadirFormulario
 
 from django.views.decorators.http import require_POST
 
+
 def index(request):
     template = loader.get_template('app1/index.html')
 
     return HttpResponse(template.render())
+
 
 def mostrar(request):
     template = loader.get_template('app1/mostrar.html')
@@ -19,10 +21,11 @@ def mostrar(request):
     personas = Persona.objects.all()
 
     context = {
-        'personas' : personas,
+        'personas': personas,
     }
 
     return HttpResponse(template.render(context, request))
+
 
 def formulario_anyadir(request):
     template = loader.get_template('app1/formulario.html')
@@ -30,7 +33,7 @@ def formulario_anyadir(request):
     form = AnyadirFormulario()
 
     context = {
-        'form' : form
+        'form': form
     }
 
     return HttpResponse(template.render(context, request))
@@ -38,16 +41,19 @@ def formulario_anyadir(request):
 
 @require_POST
 def anyadir(request):
- 
+
     form = AnyadirFormulario(request.POST)
 
-    print(f"El nombre que desea introducir es: {request.POST['nombre']} y su edad {request.POST['edad']}")
+    print(
+        f"El nombre que desea introducir es: {request.POST['nombre']} y su edad {request.POST['edad']}")
 
     if form.is_valid():
-        nueva_persona = Persona(nombre = request.POST['nombre'], edad = request.POST['edad'])
+        nueva_persona = Persona(
+            nombre=request.POST['nombre'], edad=request.POST['edad'])
         nueva_persona.save()
 
     return redirect('index')
+
 
 def borrar(request, persona_id):
 
@@ -57,8 +63,30 @@ def borrar(request, persona_id):
 
     return redirect('mostrar')
 
+
 def borrar_todo(request):
 
     Persona.objects.all().delete()
 
     return redirect('index')
+
+
+def mostrar_banco(request, persona_id, banco_id):
+
+    personas = Persona.objects.filter(id=persona_id)
+
+    for id_banco in personas:
+        id = id_banco.banco.id
+        pass
+
+    print(f"{persona_id} la id del banco es {banco_id}")
+
+    template = loader.get_template('app1/banco.html')
+
+    context = {
+        'personas': Persona.objects.filter(id=persona_id),
+        'banco': Persona.objects.filter(banco=id).count()
+    }
+
+    return HttpResponse(template.render(context, request))
+

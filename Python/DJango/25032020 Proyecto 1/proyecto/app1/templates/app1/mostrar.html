@@ -27,7 +27,9 @@
     {% if personas %}
     <ul>
         {% for persona in personas %}
-        <li>El nombre es: {{persona.nombre}} y tiene {{persona.edad}} años || {{persona.id}}</li><a href="{% url 'borrar' persona.id%}">Borrar</a>
+        <li>El nombre es: {{persona.nombre}} y tiene {{persona.edad}} años || {{persona.id}}</li>
+        <a href="{% url 'borrar' persona.id%}">Borrar</a>
+        <a href="{% url 'banco' persona.id persona.banco%}">Mostrar Banco</a>
         {% endfor %}
     </ul>
     {% else %}
