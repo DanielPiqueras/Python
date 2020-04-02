@@ -1,3 +1,5 @@
+import winpty
+
 # 1 Variables en Python
 
 """
