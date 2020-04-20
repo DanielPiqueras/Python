@@ -1,0 +1,37 @@
+image: node:10.15.0
+
+stages:
+  - Validation
+
+before_script:
+  - date
+
+after_script:
+  - date
+
+Lint:
+  stage: Validation
+  before_script:
+    - npm config ls
+    - npm ci
+  script:
+    - npm run lint
+  except:
+    - tags
+  allow_failure: false
+
+Coverage:
+  stage: Validation
+  artifacts:
+    paths:
+      - coverage/lcov-report/
+      - coverage/lcov.info
+    expire_in: 1 week
+  before_script:
+    - npm config ls
+    - npm ci
+  script:
+    - npm run test:coverage
+  except:
+    - tags
+  coverage: /All\sfiles.*?\s+(\d+.\d+)/

@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  sewan_biblio_api:
+    build: ./python
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "../../ebiblio-api:/home/python"
+    ports:
+      - 8000:8000
+
+  sewan_biblio_front:
+    build: 
+      dockerfile: ./docker/prod/nodejs/Dockerfile
+      context: ../../
+    restart: unless-stopped    
+    env_file:
+      - .env
+    links:
+      - sewan_biblio_api
+    depends_on:
+      - sewan_biblio_api
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+    ports:
+      - 80:5000

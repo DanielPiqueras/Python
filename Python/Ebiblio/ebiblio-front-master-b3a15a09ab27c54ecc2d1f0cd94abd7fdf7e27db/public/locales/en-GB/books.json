@@ -1,0 +1,21 @@
+{
+  "title": "Title",
+  "titleMessage": "The title is required",
+  "author": "Author",
+  "authorMessage": "The author is required",
+  "editorial": "Editorial",
+  "editorialMessage": "The editorial is required",
+  "isbn": "ISBN",
+  "isbnMessage": "The ISBN is required",
+  "language": "Language",
+  "languageMessage": "The language is required",
+  "user": "Username",
+  "description": "Description",
+  "available": "Available",
+  "renew": "Renew",
+  "return": "Return",
+  "reserve": "Reserve",
+  "loan": "Loan",
+  "reserved": "Reserved",
+  "loaned": "Loaned"
+}

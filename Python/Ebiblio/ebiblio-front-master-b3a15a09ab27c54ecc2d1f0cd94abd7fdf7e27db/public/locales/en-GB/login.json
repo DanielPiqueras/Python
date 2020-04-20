@@ -1,0 +1,7 @@
+{
+  "username": "Username / Email",
+  "usernameMessage": "Username is mandatory",
+  "password": "Password",
+  "passwordMessage": "Password is mandatory",
+  "loggingIn": "Login"
+}

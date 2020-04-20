@@ -1,0 +1,20 @@
+{
+    "username": "Username",
+    "usernameMessage": "The username is required",
+    "firstName": "Name",
+    "firstNameMessage": "The name is required",
+    "lastName": "Last name",
+    "lastNameMessage": "The last name is required",
+    "email": "Email",
+    "emailMessage": "Email is required",
+    "changePassword": "Change password",
+    "oldPassword": "Old password",
+    "oldPasswordMessage": "The previous password is required",
+    "password": "Password",
+    "passwordMessage": "The password is required",
+    "repeatPassword": "Repeat password",
+    "repeatPasswordMessage": "The password entered does not match",
+    "isStaff": "Administrator",
+    "active": "Active",
+    "notUsers": "There are no users to show, except the one that is logged in"
+}

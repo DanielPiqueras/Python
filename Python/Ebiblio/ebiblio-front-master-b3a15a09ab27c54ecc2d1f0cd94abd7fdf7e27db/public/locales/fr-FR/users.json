@@ -1,0 +1,20 @@
+{
+    "username": "Utilisateur",
+    "usernameMessage": "Le nom d'utilisateur est requis",
+    "firstName": "Prénom",
+    "firstNameMessage": "Le prénom est requis",
+    "lastName": "Nom de famille",
+    "lastNameMessage": "Le nom de famille est requis",
+    "email": "Email",
+    "emailMessage": "Email est requis",
+    "changePassword": "Changer le mot de passe",
+    "oldPassword": "Mot de passe précédent",
+    "oldPasswordMessage": "Le mot de passe précédent est requis",
+    "password": "Mot de passe",
+    "passwordMessage": "Le mot de passe est requis",
+    "repeatPassword": "Répéter le mot de passe",
+    "repeatPasswordMessage": "Le mot de passe entré ne correspond pas",
+    "isStaff": "Administrateur",
+    "active": "Actif",
+    "notUsers": "Aucun utilisateur à afficher, à l'exception de celui qui est connecté"
+}

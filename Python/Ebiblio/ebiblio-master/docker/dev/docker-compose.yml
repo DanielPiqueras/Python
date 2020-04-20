@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  ebiblio_api:
+    build: ./python
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "../../ebiblio-api:/home/python"
+    ports:
+      - 8000:8000
+
+  ebiblio_front:
+    build: 
+      dockerfile: ./docker/dev/nodejs/Dockerfile
+      context: ../../
+    restart: unless-stopped    
+    env_file:
+      - .env
+    links:
+      - ebiblio_api
+    depends_on:
+      - ebiblio_api
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+    ports:
+      - 80:3000

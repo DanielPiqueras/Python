@@ -1,0 +1,7 @@
+{
+    "returned": "Returned",
+    "initialDate": "Initial date",
+    "returnDate": "Return date",
+    "notHistoryUser": "This user don't have history",
+    "notHistoryBook": "This book don't have history"
+}

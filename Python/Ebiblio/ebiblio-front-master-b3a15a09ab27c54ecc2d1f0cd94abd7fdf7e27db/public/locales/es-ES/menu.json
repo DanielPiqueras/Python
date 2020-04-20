@@ -1,0 +1,15 @@
+{
+  "mainMenu": "Menú principal",
+  "profile": "Mi perfil",
+  "personalHistory": "Mi historial",
+  "bookList": "Lista de libros",
+  "adminUser": "Administrar usuarios",
+  "adminUserList": "Listado de usuarios",
+  "adminUserNew": "Nuevo usuario",
+  "adminBook": "Administrar libros",
+  "adminBookList": "Listado de libros",
+  "adminBookNew": "Nuevo libro",
+  "adminBookHistory": "Historial de préstamo",
+  "historyOf": "Historial de",
+  "updateUser": "Modificar usuario"
+}

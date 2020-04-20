@@ -1,0 +1,21 @@
+{
+  "title": "Título",
+  "titleMessage": "El título del libro es requerido",
+  "author": "Autor",
+  "authorMessage": "El autor es requerido",
+  "editorial": "Editorial",
+  "editorialMessage": "La editorial es requerida",
+  "isbn": "ISBN",
+  "isbnMessage": "El ISBN es requerido",
+  "language": "Idioma",
+  "languageMessage": "El idioma es requerido",
+  "description": "Descripción",
+  "user": "Usuario",
+  "available": "Disponible",
+  "renew": "Renovar",
+  "return": "Devolver",
+  "reserve": "Reservar",
+  "loan": "Alquilar",
+  "reserved": "Reservado",
+  "loaned": "Prestado"
+}

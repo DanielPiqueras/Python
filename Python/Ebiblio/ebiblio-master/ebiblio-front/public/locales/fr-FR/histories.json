@@ -1,0 +1,7 @@
+{
+    "returned": "Rendu",
+    "initialDate": "Date initiale",
+    "returnDate": "Date de retour",
+    "notHistoryUser": "Cet utilisateur n'a pas d'historique",
+    "notHistoryBook": "Ce livre n'a pas d'histoire"
+}

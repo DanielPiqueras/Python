@@ -1,0 +1,15 @@
+{
+  "mainMenu": "Main menu",
+  "profile": "My profile",
+  "personalHistory": "My history",
+  "bookList": "Book list",
+  "adminUser": "Manage users",
+  "adminUserList": "List of users",
+  "adminUserNew": "New user",
+  "adminBook": "Manage books",
+  "adminBookList": "List of books",
+  "adminBookNew": "New book",
+  "adminBookHistory": "Loan history",
+  "historyOf": "History of",
+  "updateUser": "Modify user"
+}

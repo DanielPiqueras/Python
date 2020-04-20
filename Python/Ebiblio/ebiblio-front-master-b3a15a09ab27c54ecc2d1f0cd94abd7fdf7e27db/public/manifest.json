@@ -1,0 +1,25 @@
+{
+  "name": "E-Biblio",
+  "short_name": "E-Biblio",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#0598EC",
+  "theme_color": "#0598EC",
+  "icons": [
+    {
+      "src": "images/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}

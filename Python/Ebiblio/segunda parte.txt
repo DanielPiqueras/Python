@@ -1,0 +1,12 @@
+npm update
+npm start
+
+cambiar la versión en babel-loader
+
+borrar node-modules
+
+borrar package-lock.json
+
+npm audit fix
+
+npm start

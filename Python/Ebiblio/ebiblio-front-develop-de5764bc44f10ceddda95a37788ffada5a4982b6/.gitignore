@@ -1,0 +1,48 @@
+# Build results
+.cache
+.env
+/.nyc_output
+/babel_cache
+/coverage
+/dist
+/logs
+/output
+/reports
+/storybook-static
+
+# Node & npm
+/node_modules
+/package-lock.json
+/npm-debug.log
+
+# OS Files
+.DS_Store
+
+# IDE
+/.idea
+/.vscode
+/.history
+/graphql.config.json
+/graphql.schema.json
+
+# Wallaby JS
+/wallaby.conf.js
+
+# pnpm
+/pnpm-debug.log
+/shrinkwrap.yaml
+
+# Yarn
+/yarn-error.log
+/yarn.lock
+
+# PM2
+/ecosystem.*
+
+*.tgz
+.cache
+/.cache
+/build-stats.json
+/build
+.env*
+!.env

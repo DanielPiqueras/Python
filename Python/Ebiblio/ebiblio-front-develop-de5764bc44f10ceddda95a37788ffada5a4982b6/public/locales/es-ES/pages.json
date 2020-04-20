@@ -1,0 +1,17 @@
+{
+  "profile": "Mi perfil",
+  "personalHistory": "Mi historial",
+  "adminHistoryOf": "Historial de {{historyName}}",
+  "bookList": "Lista de libros",
+  "adminUser": "Administrar usuarios",
+  "adminUserList": "Listado de usuarios",
+  "adminUserUpdate": "Modificar usuario {{name}}",
+  "adminUserNew": "Nuevo usuario",
+  "adminBook": "Administrar libros",
+  "adminBookList": "Listado de libros",
+  "adminBookNew": "Nuevo libro",
+  "adminBookUpdate": "Modificar libro {{name}}",
+  "adminBookHistory": "Historial de préstamo",
+  "logout": "Desconexión",
+  "login": "Acceder"
+}

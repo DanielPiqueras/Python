@@ -1,0 +1,7 @@
+{
+    "returned": "Devuelto",
+    "initialDate": "Fecha inicial",
+    "returnDate": "Fecha de devolución",
+    "notHistoryUser": "Este usuario no dispone de histórico",
+    "notHistoryBook": "Este libro no dispone de histórico"
+}

@@ -1,0 +1,8 @@
+[submodule "ebiblio-front"]
+	path = ebiblio-front
+	url = git@desarrollo.vozelia.com:jason.gass/ebiblio-front.git
+	branch = master
+[submodule "ebiblio-api"]
+	path = ebiblio-api
+	url = git@desarrollo.vozelia.com:Alonzo/ebiblio-api.git
+	branch = master

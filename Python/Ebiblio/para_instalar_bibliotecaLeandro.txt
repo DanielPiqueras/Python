@@ -1,0 +1,18 @@
+Para el proyecto de Leandro
+
+pip install djangorestframework
+pip install django-cors-headers
+pip install django-jsonfield
+pip install isbnlib
+
+pip install djangorestframework django-cors-headers django-jsonfield isbnlib
+
+cd ebiblio-api
+
+python manage.py migrate
+
+python manage.py loaddata initial_data.json
+
+python manage.py runserver
+
+login: username: admin, password: admin
